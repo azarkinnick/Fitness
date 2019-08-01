@@ -26,6 +26,17 @@ button, .button{
     padding: 10px 20px;
     text-decoration: none
 }
+form button{
+    background-color: #131415;
+}
+form button:hover{
+    background-color: #f89513;
+    cursor: pointer;
+}
+label:hover{
+    cursor: pointer;
+
+}
 .container{
     max-width: 1060px;
     width: 100%;
@@ -218,7 +229,8 @@ h2{
 .article-list{
     margin: 0 0 50px 0;
     padding: 0;
-    list-style-type: none
+    list-style-type: none;
+    text-align:left;
 }
 .article__item{
     padding-bottom: 27px;
@@ -233,11 +245,16 @@ h2{
     margin: 0
 }
 .article__image{
-    flex:1 0 160px;
+    flex: 1 0 160px;
     height: 160px;
     border-radius: 50%;
     overflow: hidden;
     margin-right: 20px;
+    background-image: url("../img/content/nophoto.png");
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #f5f5f5;
 }
 .aricle__photo{
     width: 100%;
@@ -446,6 +463,8 @@ input[type="radio"]:checked+label:before{
 .post__item{
     flex-basis: 270px;
     margin-bottom: 47px;
+    padding-right: 11px;
+    box-sizing: border-box;
 }
 .post__picture{
     position: relative;
@@ -491,6 +510,7 @@ input[type="radio"]:checked+label:before{
 .post__content{
     font-family: 'open_sanslight';
     font-size: 14px;
+    line-height: 21px;
 }
 .post__content p{
     margin:0;
@@ -705,6 +725,7 @@ input[type="radio"]:checked+label:before{
     padding: 0;
     margin: 0;
     text-transform: uppercase;
+    text-align: left;
 }
 .aside__description{
     color:#656464;
@@ -713,6 +734,7 @@ input[type="radio"]:checked+label:before{
 .news{
     display:flex;
     padding: 70px 0 0 0;
+    text-align: center
 }
 .news h2{
     text-align: center;
